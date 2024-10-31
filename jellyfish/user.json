@@ -1,0 +1,40 @@
+{
+    "personas": [
+      {
+        "userName": "csmanagerus",
+        "firstName": "Abby",
+        "lastName": "Heinerman",
+        "purpose": "Used to show the Manager experience for Customer Service USA. Has access only to the Customer Service (US) site of the org. Abby is a Salaried employee with both a primary and secondary work assignment and has a GL split configured between them.",
+        "userRole": {
+          "default": "Manager - HCM",
+          "additional": [
+            "Manager - WFM",
+            "Manager - HCM Period Review"
+          ]
+        },
+        "reportsTo": {
+          "managerName": "Jane Matsumiya",
+          "managerUserName": "hrexecutiveglobal"
+        }
+      },
+      {
+        "userName": "csworkerus",
+        "firstName": "Ada",
+        "lastName": "Watts",
+        "purpose": "Used to show the employee experience for USA. Aaliyah also has an active Child Support garnishment on record.",
+        "userRole": {
+          "default": "Employee USA - HCM",
+          "additional": [
+            "Employee USA - WFM/Payroll/Benefits",
+            "Employee USA - WFM/Payroll",
+            "Employee USA - WFM"
+          ]
+        },
+        "reportsTo": {
+          "managerName": "Abby Heinerman",
+          "managerUserName": "csmanagerus"
+        }
+      }
+    ]
+  }
+  
