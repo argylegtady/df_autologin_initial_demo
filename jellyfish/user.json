@@ -1,40 +1,191 @@
 {
-    "personas": [
-      {
-        "userName": "csmanagerus",
-        "firstName": "Abby",
-        "lastName": "Heinerman",
-        "purpose": "Used to show the Manager experience for Customer Service USA. Has access only to the Customer Service (US) site of the org. Abby is a Salaried employee with both a primary and secondary work assignment and has a GL split configured between them.",
-        "userRole": {
-          "default": "Manager - HCM",
-          "additional": [
-            "Manager - WFM",
-            "Manager - HCM Period Review"
-          ]
-        },
-        "reportsTo": {
-          "managerName": "Jane Matsumiya",
-          "managerUserName": "hrexecutiveglobal"
-        }
+  "personas": [
+    {
+      "userName": "csmanagerus",
+      "firstName": "Abby",
+      "lastName": "Heinerman",
+      "purpose": "Used to show the Manager experience for Customer Service USA. Has access only to the Customer Service (US) site of the org. Abby is a Salaried employee with both a primary and secondary work assignment and has a GL split configured between them.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": [
+          "Manager - WFM",
+          "Manager - HCM Period Review"
+        ]
       },
-      {
-        "userName": "csworkerus",
-        "firstName": "Ada",
-        "lastName": "Watts",
-        "purpose": "Used to show the employee experience for USA. Aaliyah also has an active Child Support garnishment on record.",
-        "userRole": {
-          "default": "Employee USA - HCM",
-          "additional": [
-            "Employee USA - WFM/Payroll/Benefits",
-            "Employee USA - WFM/Payroll",
-            "Employee USA - WFM"
-          ]
-        },
-        "reportsTo": {
-          "managerName": "Abby Heinerman",
-          "managerUserName": "csmanagerus"
-        }
-      }
-    ]
-  }
-  
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "csworkerus",
+      "firstName": "Ada",
+      "lastName": "Watts",
+      "purpose": "Used to show the employee experience for USA. Aaliyah also has an active Child Support garnishment on record.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Abby Heinerman",
+        "managerUserName": "csmanagerus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "csworkerus.punch",
+      "firstName": "Danica",
+      "lastName": "McKay",
+      "purpose": "Purpose: Used to show employee punching. Default User Role: Employee USA - HCM.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Abby Heinerman",
+        "managerUserName": "csmanagerus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "csonboardingus",
+      "firstName": "Jessica",
+      "lastName": "Connor",
+      "purpose": "Purpose: Used to demo the USA employee onboarding experience. Default User Role: Onboarding USA.",
+      "userRole": {
+        "default": "Onboarding USA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Abby Heinerman",
+        "managerUserName": "csmanagerus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "Ali.Duran",
+      "firstName": "Ali",
+      "lastName": "Duran",
+      "purpose": "Purpose: Demonstrate Dependent Verification. Ali has added a spouse dependent and her current plan year Annual Enrollment is in progress.",
+      "userRole": {
+        "default": "Benefits - Dependent Verification",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Abby Heinerman",
+        "managerUserName": "csmanagerus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "Alex.Anderson",
+      "firstName": "Alex",
+      "lastName": "Anderson",
+      "purpose": "Purpose: Demonstrate an employee who's holiday pay rate is based upon average hours.",
+      "userRole": {
+        "default": "Holiday Rate - Avg Hrs Calc",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Abby Heinerman",
+        "managerUserName": "csmanagerus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "csterminatedus",
+      "firstName": "Ashley",
+      "lastName": "Garcia",
+      "purpose": "Purpose: Used to show limited access for a terminated employee.",
+      "userRole": {
+        "default": "Terminated",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Abby Heinerman",
+        "managerUserName": "csmanagerus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "cstalentus",
+      "firstName": "Caleb",
+      "lastName": "Wallace",
+      "purpose": "Purpose: Used to show full HCM admin experience for the USA Customer Service org.",
+      "userRole": {
+        "default": "Admin Practitioner - USA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Macon Burke",
+        "managerUserName": "adminus"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
+      "userName": "psworkercan",
+      "firstName": "Alice",
+      "lastName": "Anderson",
+      "purpose": "Alice has an active Support garnishment on record.",
+      "userRole": {
+        "default": "Employee",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Sabrina Tan",
+        "managerUserName": "psmanagercan"
+      },
+      "vertical": "Public Sector (CAN)"
+    },
+    {
+      "userName": "psonboardingcan",
+      "firstName": "Sally",
+      "lastName": "Johnson",
+      "purpose": "",
+      "userRole": {
+        "default": "Pre-start",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Sabrina Tan",
+        "managerUserName": "psmanagercan"
+      },
+      "vertical": "Public Sector (CAN)"
+    },
+    {
+      "userName": "psterminatedcan",
+      "firstName": "Laura",
+      "lastName": "Green",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in CAN.",
+      "userRole": {
+        "default": "Terminated",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "N/A",
+        "managerUserName": ""
+      },
+      "vertical": "Public Sector (CAN)"
+    },
+    {
+      "userName": "psmanagercan",
+      "firstName": "Sabrina",
+      "lastName": "Tan",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org.",
+      "userRole": {
+        "default": "Manager",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector (CAN)"
+    }
+  ]
+}
