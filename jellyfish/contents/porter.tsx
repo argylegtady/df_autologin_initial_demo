@@ -4,13 +4,14 @@ import { useState } from "react"
 import { usePort } from "@plasmohq/messaging/hook"
 
 export const config: PlasmoCSConfig = {
-  matches: ["http://localhost:1947/*"]
+  matches: ["https://nademo.dayforcehcm.com/MyDayforce/Mydayforce.aspx"]
 }
 
 export default function Porter() {
   const port = usePort("mail")
   const [password, setPassword] = useState("")
-  return (
+  return (<div></div>
+    /*
     <div
       style={{
         position: "fixed",
@@ -31,6 +32,6 @@ export default function Porter() {
         Test Password
       </button>
       <p>HELLO {port.data}</p>
-    </div>
+    </div>*/
   )
 }

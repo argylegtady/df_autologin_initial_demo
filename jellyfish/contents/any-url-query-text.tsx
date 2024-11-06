@@ -3,10 +3,12 @@ import { useMessage } from "@plasmohq/messaging/hook";
 
 export const config: PlasmoCSConfig = {
   all_frames: true,
+  matches: ["https://nademo.dayforcehcm.com/MyDayforce/Mydayforce.aspx"]
 };
 
 const QueryTextAnywhere = () => {
   const { data } = useMessage<string, string>(async (req, res) => {
+    console.log(req.body);
     const userName = req.body.userName;
     console.log(userName);
     const loginDetails = {

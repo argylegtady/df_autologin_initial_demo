@@ -4,7 +4,7 @@ import { relayMessage, sendToBackground } from "@plasmohq/messaging"
 import { relay } from "@plasmohq/messaging/relay"
 
 export const config: PlasmoCSConfig = {
-  matches: ["http://localhost:1947/*"]
+  matches: ["https://nademo.dayforcehcm.com/MyDayforce/Mydayforce.aspx"]
 }
 
 relayMessage({

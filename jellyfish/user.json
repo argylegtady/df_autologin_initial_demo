@@ -1,28 +1,915 @@
 {
   "personas": [
     {
-      "userName": "csmanagerus",
-      "firstName": "Abby",
-      "lastName": "Heinerman",
-      "purpose": "Used to show the Manager experience for Customer Service USA. Has access only to the Customer Service (US) site of the org. Abby is a Salaried employee with both a primary and secondary work assignment and has a GL split configured between them.",
+      "userName": "rlworkerus",
+      "firstName": "Ashton",
+      "lastName": "Short",
+      "purpose": "Purpose: Used to show the employee experience for USA.",
       "userRole": {
-        "default": "Manager - HCM",
+        "default": "Employee USA - HCM",
         "additional": [
-          "Manager - WFM",
-          "Manager - HCM Period Review"
+          "Employee USA - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFMThis employee DOES NOT QUALIFY FOR BENEFITS please switch payclass to FT if you need to demo benefits enrollment."
         ]
+      },
+      "reportsTo": {
+        "managerName": "Sierra Blackwell",
+        "managerUserName": "Store Manager - 120"
+      },
+      "vertical": "Large Retail (US)"
+    },
+    {
+      "userName": "Cali.Jordan",
+      "firstName": "Cali",
+      "lastName": "Jordan",
+      "purpose": "Purpose: Used to show the employee experience for a California based retail employee where Fair Work Week scheduling rules are applied. Associated with policies that include meal waiver, etc.\u00a0 Also assigned a \u2018Footwear Training\u2019 Skill",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - HCM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Sierra Blackwell",
+        "managerUserName": "Store Manager - 120"
+      },
+      "vertical": "Large Retail (US)"
+    },
+    {
+      "userName": "Antonio.Baker",
+      "firstName": "Antonio",
+      "lastName": "Baker",
+      "purpose": "Purpose: Used to show the borrowed employee experience. Antonio is borrowed from Store 110.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Kris Korver",
+        "managerUserName": "Store Manager - 110"
+      },
+      "vertical": "Large Retail (US)"
+    },
+    {
+      "userName": "rlmanagerus",
+      "firstName": "Sierra",
+      "lastName": "Blackwell",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Large Retail USA. Has access only to the Large Retail - Store 120 (US) site of the org.   Default User Role  : Manager - HCM - Retail Additional User Roles : Manager - WFM",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Mary Shaw",
+        "managerUserName": "District Manager"
+      },
+      "vertical": "Large Retail (US)"
+    },
+    {
+      "userName": "rdistmanagerus",
+      "firstName": "Mary",
+      "lastName": "Shaw",
+      "purpose": "Purpose:\u00a0 Used to show the Above Store Retail USA experience for the Large & Small Retail stores. Has above store access to Large Retail Stores (110, 120, 130) & Small Retail Stores (111, 121, 131) Default User Role : District Manager - HCM Retail Additional User Roles : N/A",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Peyton Douglas",
+        "managerUserName": "Sales Manager- US"
+      },
+      "vertical": "Large Retail (US)"
+    },
+    {
+      "userName": "rlterminatedus",
+      "firstName": "Deron",
+      "lastName": "Parker",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in USA",
+      "userRole": {
+        "default": "TerminatedTerminated on January 4, 2024",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Large Retail (US)"
+    },
+    {
+      "userName": "rsworkerus",
+      "firstName": "Andrew",
+      "lastName": "Henry",
+      "purpose": "Purpose: Used to show the employee experience for Small Retail USA.\u00a0Assigned to Store 121.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFMThis employee DOES NOT QUALIFY FOR BENEFITS please switch payclass to FT if you need to demo benefits enrollment."
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Breanna Long",
+        "managerUserName": "Store Manager - 121"
+      },
+      "vertical": "Small Retail Store (US)"
+    },
+    {
+      "userName": "Calli.Keller",
+      "firstName": "Cali",
+      "lastName": "Keller",
+      "purpose": "Purpose: Used to show the employee experience for a California based retail employee where Fair Work Week scheduling rules are applied. Associated with policies that include meal waiver, etc.\u00a0 Also assigned a \u2018Sales Floor Training\u2019 Skill",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - HCM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Breanna Long",
+        "managerUserName": "Store Manager - 121"
+      },
+      "vertical": "Small Retail Store (US)"
+    },
+    {
+      "userName": "Billy.Jacobs",
+      "firstName": "Billy",
+      "lastName": "Jacobs",
+      "purpose": "Purpose: Used to show the borrowed employee experience. Billy is borrowed from Store 111",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Brenda Walters",
+        "managerUserName": "Store Manager - 111"
+      },
+      "vertical": "Small Retail Store (US)"
+    },
+    {
+      "userName": "rsmanagerus",
+      "firstName": "Breanna",
+      "lastName": "Long",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Small Retail USA. Has access only to the Small Retail - Store 121 (US) site of the org. \u00a0  Default User Role : Manager - HCM Retail Additional User Roles : Manager - WFM",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Mary Shaw",
+        "managerUserName": "District Manager"
+      },
+      "vertical": "Small Retail Store (US)"
+    },
+    {
+      "userName": "rdistmanagerus",
+      "firstName": "Mary",
+      "lastName": "Shaw",
+      "purpose": "Purpose:\u00a0 Used to show the Above Store Retail USA experience for the Large & Small Retail stores. Has above store access to Large Retail Stores (110, 120, 130) & Small Retail Stores (111, 121, 131)",
+      "userRole": {
+        "default": "District Manager - HCM - Retail Additional User Roles : N/A",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Peyton Douglas",
+        "managerUserName": "Sales Manager US"
+      },
+      "vertical": "Small Retail Store (US)"
+    },
+    {
+      "userName": "rsterminatedus",
+      "firstName": "Deron",
+      "lastName": "Sloan",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in USA",
+      "userRole": {
+        "default": "TerminatedTerminated on July 1, 2022",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Small Retail Store (US)"
+    },
+    {
+      "userName": "qsrworkerusny",
+      "firstName": "Audrey",
+      "lastName": "Adams",
+      "purpose": "Purpose: Used to show the employee experience for QSR USA - New York.\u00a0Employee has split shift (spread of hours) Pay rule in their policy. Assigned to Restaurant 311 QSR-NY.",
+      "userRole": {
+        "default": "Employee USA - HCMThis employee DOES NOT QUALIFY FOR BENEFITS please switch payclass to FT if you need to demo benefits enrollment.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Parker",
+        "managerUserName": "General Manager - Restaurant 311 QSR -NY"
+      },
+      "vertical": "Quick Service Restaurant (US-New York)"
+    },
+    {
+      "userName": "Ryan.Garcia",
+      "firstName": "Ryan",
+      "lastName": "Garcia",
+      "purpose": "Purpose: Used to show the borrowed employee experience. Ryan is borrowed from Restaurant 312 - QSR TX",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Davis",
+        "managerUserName": "General Manager - Restaurant 312 QSR - TX"
+      },
+      "vertical": "Quick Service Restaurant (US-New York)"
+    },
+    {
+      "userName": "Avery.Collins",
+      "firstName": "Avery",
+      "lastName": "Collins",
+      "purpose": "Purpose: Used to show minor scheduling rules as well as tipped employee. Employee is age 16 and DOB is continually upkept.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Parker",
+        "managerUserName": "General Manager - Restaurant 311 QSR -NY"
+      },
+      "vertical": "Quick Service Restaurant (US-New York)"
+    },
+    {
+      "userName": "qsrmanagerusny",
+      "firstName": "William",
+      "lastName": "Parker",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for QSR USA-NY. Has access only to Restaurant 311 QSR NY  Default User Role : Manager - HCM Retail",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Brian Young",
+        "managerUserName": "Regional Manager - US"
+      },
+      "vertical": "Quick Service Restaurant (US-New York)"
+    },
+    {
+      "userName": "restregus",
+      "firstName": "Brian",
+      "lastName": "Young",
+      "purpose": "Purpose:\u00a0 Used to show the Above Restaurant experience for USA restaurants. Has above restaurant access to Restaurant 312 - QSR (TX); Restaurant 311 - QSR (NY); Restaurant 310 - QSR (CA)",
+      "userRole": {
+        "default": "District Manager - HCM - Retail",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Peyton Douglas",
+        "managerUserName": "Sales Manager US"
+      },
+      "vertical": "Quick Service Restaurant (US-New York)"
+    },
+    {
+      "userName": "qsrworkerus",
+      "firstName": "Aria",
+      "lastName": "Collins",
+      "purpose": "Purpose: Used to show the QSR employee experience for USA-General.",
+      "userRole": {
+        "default": "Employee USA - HCMThis employee DOES NOT QUALIFY FOR BENEFITS please switch payclass to FT if you need to demo benefits enrollment.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Davis",
+        "managerUserName": "General Manager - Restaurant 312 - QSR TX"
+      },
+      "vertical": "Quick Service Restaurant (US-General)"
+    },
+    {
+      "userName": "David.Smith",
+      "firstName": "David",
+      "lastName": "Smith",
+      "purpose": "Purpose: Used to show the borrowed employee experience for QSR USA-General. David is borrowed from Restaurant QSR 311 - NY .",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Parker",
+        "managerUserName": "General Manager - Restaurant 311 - QSR NY"
+      },
+      "vertical": "Quick Service Restaurant (US-General)"
+    },
+    {
+      "userName": "Avery.Adams",
+      "firstName": "Avery",
+      "lastName": "Adams",
+      "purpose": "Purpose: Used to show scheduling rules for minors as well as tipped employee. Employee is age 16 & age is continually back-dated.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Davis",
+        "managerUserName": "General Manager - Restaurant 312 - QSR TX"
+      },
+      "vertical": "Quick Service Restaurant (US-General)"
+    },
+    {
+      "userName": "qsrmanagerus",
+      "firstName": "William",
+      "lastName": "Davis",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for QSR USA-General. Has access only to the Restaurant 312 - QSR TX)  Default User Role  : Manager - HCM - Retail",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "Regional Manager  -HQ USA"
+      },
+      "vertical": "Quick Service Restaurant (US-General)"
+    },
+    {
+      "userName": "restregus",
+      "firstName": "Brian",
+      "lastName": "Young",
+      "purpose": "Purpose:\u00a0 Used to show the above restaurant experience for the USA restaurants. Has above restaurant access to Restaurant 312 - QSR (TX); Restaurant 311 - QSR (NY); Restaurant 310 - QSR (CA) Default User Role : Regional Manager - HCM Retail",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Peyton Douglas",
+        "managerUserName": "Sales Manager- US"
+      },
+      "vertical": "Quick Service Restaurant (US-General)"
+    },
+    {
+      "userName": "qsrworkerusca",
+      "firstName": "Anthony",
+      "lastName": "Davis",
+      "purpose": "Purpose: Used to show the employee experience for QSR USA - California.\u00a0Assigned to Store 310. BADGE #: 11522",
+      "userRole": {
+        "default": "Employee USA - HCMThis employee DOES NOT QUALIFY FOR BENEFITS please switch payclass to FT if you need to demo benefits enrollment.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Anthony Davis",
+        "managerUserName": "General Manager - Restaurant 310 QSR - CA"
+      },
+      "vertical": "Quick Service Restaurant (US-California)"
+    },
+    {
+      "userName": "Caleb.Flores",
+      "firstName": "Caleb",
+      "lastName": "Flores",
+      "purpose": "Purpose: Used to show the borrowed employee experience. Caleb is borrowed from Store 311 - TX",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "William Davis",
+        "managerUserName": "General Manager - Restaurant 311 -TX"
+      },
+      "vertical": "Quick Service Restaurant (US-California)"
+    },
+    {
+      "userName": "Ava.Moore",
+      "firstName": "Ava",
+      "lastName": "Moore",
+      "purpose": "Purpose: Used to show minor employee scheduling rules. Employee is age 16 and age is continually back dated.",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Anthony Davis",
+        "managerUserName": "General Manager - Restaurant 310 QSR - CA"
+      },
+      "vertical": "Quick Service Restaurant (US-California)"
+    },
+    {
+      "userName": "qsrmanagerusca",
+      "firstName": "Zoey",
+      "lastName": "Lucas",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Small Retail USA. Has access only to the Small Retail - Store 121 (US) site of the org. \u00a0  Default User Role : Manager - HCM Retail",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "Brian Young - Regional Manager"
+      },
+      "vertical": "Quick Service Restaurant (US-California)"
+    },
+    {
+      "userName": "restregus",
+      "firstName": "Brian",
+      "lastName": "Young",
+      "purpose": "Purpose:\u00a0 Used to show the Above Restaurant experience for USA restaurants. Has above restaurant access to Restaurant 312 - QSR (TX); Restaurant 311 - QSR (NY); Restaurant 310 - QSR (CA)",
+      "userRole": {
+        "default": "District Manager - HCM - Retail",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Peyton Douglas",
+        "managerUserName": "Sales Manager US"
+      },
+      "vertical": "Quick Service Restaurant (US-California)"
+    },
+    {
+      "userName": "icpworkerbra",
+      "firstName": "Adriana",
+      "lastName": "Alvarez",
+      "purpose": "Purpose: Used to show the employee experience for BRA Factory.",
+      "userRole": {
+        "default": "Global Employee - BRA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerbra"
+      },
+      "vertical": "ICP Factory - Brazil (BRA)"
+    },
+    {
+      "userName": "icpmanagerbra",
+      "firstName": "Olivia",
+      "lastName": "Machado",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (BRA). Has access only to the Factory (BRA) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access only to the Factory (BRA) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager BRA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Brazil (BRA)"
+    },
+    {
+      "userName": "icponboardingbra",
+      "firstName": "Paulo",
+      "lastName": "Lopez",
+      "purpose": "Purpose: Used to demo the BRA employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding BRA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Brazil (BRA)"
+    },
+    {
+      "userName": "icpworkerphl",
+      "firstName": "Alan",
+      "lastName": "Santos",
+      "purpose": "Purpose: Used to show the employee experience for PHL Factory.",
+      "userRole": {
+        "default": "ICP Employee - PHL",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerphl"
+      },
+      "vertical": "ICP Factory - Philippines (PHL)"
+    },
+    {
+      "userName": "icpmanagerphl",
+      "firstName": "Angela",
+      "lastName": "Evangelista",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (PHL). Has access only to the Factory (PHL) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access only to the Factory (PHL) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager PHL",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Philippines (PHL)"
+    },
+    {
+      "userName": "icponboardingphl",
+      "firstName": "Willie",
+      "lastName": "Dela",
+      "purpose": "Purpose: Used to demo the PHL employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding PHL",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Philippines (PHL)"
+    },
+    {
+      "userName": "icpworkerind",
+      "firstName": "Amyra",
+      "lastName": "Purohit",
+      "purpose": "Purpose: Used to show the employee experience for IND Factory.",
+      "userRole": {
+        "default": "Global Employee - IND",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerind"
+      },
+      "vertical": "ICP Factory - India (IND)"
+    },
+    {
+      "userName": "icpmanagerind",
+      "firstName": "Anshika",
+      "lastName": "Modi",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (IND). Has access only to the Factory (IND) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access only to the Factory (IND) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager IND",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - India (IND)"
+    },
+    {
+      "userName": "icponboardingind",
+      "firstName": "Shikhar",
+      "lastName": "Yadav",
+      "purpose": "Purpose: Used to demo the IND employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding IND",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - India (IND)"
+    },
+    {
+      "userName": "icpworkerchn",
+      "firstName": "Ai",
+      "lastName": "Yu",
+      "purpose": "Purpose: Used to show the employee experience for CHN Factory.",
+      "userRole": {
+        "default": "Global Employee - CHN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerchn"
+      },
+      "vertical": "ICP Factory - China (CHN)"
+    },
+    {
+      "userName": "icpmanagerchn",
+      "firstName": "Chongyun",
+      "lastName": "Chen",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (CHN). Has access only to the Factory (CHN) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access only to the Factory (CHN) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager CHN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - China (CHN)"
+    },
+    {
+      "userName": "icponboardingchn",
+      "firstName": "Zhongli",
+      "lastName": "Mao",
+      "purpose": "Purpose: Used to demo the CHN employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding CHN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - China (CHN)"
+    },
+    {
+      "userName": "icpworkertha",
+      "firstName": "Amonsak",
+      "lastName": "Somsri",
+      "purpose": "Purpose: Used to show the employee experience for THA Factory.",
+      "userRole": {
+        "default": "ICPEmployee - THA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagertha"
+      },
+      "vertical": "ICP Factory - Thailand (THA)"
+    },
+    {
+      "userName": "icpmanagertha",
+      "firstName": "Yihwa",
+      "lastName": "Sitwat",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (THA). Has access only to the Factory (THA) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access only to the Factory (THA) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager THA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Thailand (THA)"
+    },
+    {
+      "userName": "icpworkertwn",
+      "firstName": "Akemi",
+      "lastName": "Hwang",
+      "purpose": "Purpose: Used to show the employee experience for TWNFactory.",
+      "userRole": {
+        "default": "ICP Employee - TWN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagertwn"
+      },
+      "vertical": "ICP Factory - Taiwan (TWN)"
+    },
+    {
+      "userName": "icpmanagertwn",
+      "firstName": "Heiwa",
+      "lastName": "Oaan",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (TWN). Has access only to the Factory (TWN) site of the org. Heiwa is a Salaried employee with a primary work assignment.Has access only to the Factory (TWN) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager TWN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Taiwan (TWN)"
+    },
+    {
+      "userName": "icpworkervnm",
+      "firstName": "Anh",
+      "lastName": "Cam",
+      "purpose": "Purpose: Used to show the employee experience for THA Factory.",
+      "userRole": {
+        "default": "ICP Employee - THA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagertha"
+      },
+      "vertical": "ICP Factory - Vietnam (VNM)"
+    },
+    {
+      "userName": "icpmanagervnm",
+      "firstName": "Nhi",
+      "lastName": "Phu",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (THA). Has access only to the Factory (THA) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access only to the Factory (THA) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager THA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Vietnam (VNM)"
+    },
+    {
+      "userName": "icpworkerzaf",
+      "firstName": "Abeni",
+      "lastName": "Dlamini",
+      "purpose": "Purpose: Used to show the employee experience for ZAF Factory.",
+      "userRole": {
+        "default": "ICP Employee - ZAF",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerzaf"
+      },
+      "vertical": "ICP Factory - South Africa (ZAF)"
+    },
+    {
+      "userName": "icpmanagerzaf",
+      "firstName": "Makena",
+      "lastName": "Bhule",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (ZAF). Has access only to the Factory (ZAF) site of the org. Liqin is a Salaried employee with a primary work assignment.Has access only to the Factory (ZAF) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager ZAF",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - South Africa (ZAF)"
+    },
+    {
+      "userName": "icpworkerhkg",
+      "firstName": "Aiguo",
+      "lastName": "Jin",
+      "purpose": "Purpose: Used to show the employee experience for HKG Factory.",
+      "userRole": {
+        "default": "ICP Employee - HKG",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerhkg"
+      },
+      "vertical": "ICP Factory - Hong Kong (HKG)"
+    },
+    {
+      "userName": "icpmanagerhkg",
+      "firstName": "Liqin",
+      "lastName": "Choy",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (HKG). Has access only to the Factory (HKG) site of the org. Liqin is a Salaried employee with a primary work assignment.Has access only to the Factory (HKG) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager HKG",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Hong Kong (HKG)"
+    },
+    {
+      "userName": "csworker",
+      "firstName": "Full",
+      "lastName": "Name",
+      "purpose": "Purpose: Used to show the employee experience for MAU. (Insert csmanager name) also has an active Child Support garnishment on record.",
+      "userRole": {
+        "default": "Employee MAU - HCM",
+        "additional": [
+          "Employee MAU - WFM/Payroll/Benefits",
+          "Employee MAU - WFM/Payroll",
+          "Employee MAU - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Name",
+        "managerUserName": "csmanager"
+      },
+      "vertical": "Customer Service (MAU)"
+    },
+    {
+      "userName": "csonboarding",
+      "firstName": "Full",
+      "lastName": "Name",
+      "purpose": "Purpose: Used to demo the MAU employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding MAU",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Name",
+        "managerUserName": "csmanager"
+      },
+      "vertical": "Customer Service (MAU)"
+    },
+    {
+      "userName": "csterminated",
+      "firstName": "Full",
+      "lastName": "Name",
+      "purpose": "Purpose: Used to show limited access for a terminated employee",
+      "userRole": {
+        "default": "TerminatedTerminated on MM DD, YY. Last pay date MM DD, YY.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Name",
+        "managerUserName": "csmanager"
+      },
+      "vertical": "Customer Service (MAU)"
+    },
+    {
+      "userName": "csmanager",
+      "firstName": "Full",
+      "lastName": "Name",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service MAU. Has access only to the Customer Service (MUS) site of the org. (Insert csmanager name) is a Salaried employee with both a primary and secondary work assignment and has a GL split configured between them.\u00a0Default User Role : Manager - HCMAdditional User Roles : Manager - WFM; Manager - HCM Period Review",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Name",
+        "managerUserName": "csmanager"
+      },
+      "vertical": "Customer Service (MAU)"
+    },
+    {
+      "userName": "cstalent",
+      "firstName": "Full",
+      "lastName": "Name",
+      "purpose": "Purpose: Used to show full HCM admin experience for the MAU Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access only to the Customer Service (MUS) of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screensDefault User Role : Admin Practitioner - MAU",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Name",
+        "managerUserName": "admin"
+      },
+      "vertical": "Customer Service (MAU)"
+    },
+    {
+      "userName": "icpworkerjpn",
+      "firstName": "Akari",
+      "lastName": "Mori",
+      "purpose": "Purpose: Used to show the employee experience for JPN Factory.",
+      "userRole": {
+        "default": "ICP Employee - JPN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerJPN"
+      },
+      "vertical": "ICP Factory - Japan  (JPN)"
+    },
+    {
+      "userName": "icpmanagerjpn",
+      "firstName": "Tsuyu",
+      "lastName": "Ikeda",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (JPN). Has access only to the Factory (JPN) site of the org. Liqin is a Salaried employee with a primary work assignment.Has access only to the Factory (JPN) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager JPN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Japan  (JPN)"
+    },
+    {
+      "userName": "hworkerus",
+      "firstName": "Abbey",
+      "lastName": "Clark",
+      "purpose": "Purpose: Used to show the employee experience for USA Healthcare, Advanced Scheduling. This employee is tied to California Pay Policies\u00a0NOTE: this EE is PT & NOT eligible for Benefits. You can use Cali Chase (username Cali.Chase)to demo Benefits in Healthcare.",
+      "userRole": {
+        "default": "Employee USA - HCM Segments",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Roberto Howard",
+        "managerUserName": "hmanagerus"
+      },
+      "vertical": "Healthcare (US) - Assisted Living"
+    },
+    {
+      "userName": "Cali.Chase",
+      "firstName": "Cali",
+      "lastName": "Chase",
+      "purpose": "Purpose: Used to show the employee experience for a California based retail employee where Fair Work Week scheduling rules are applied. Associated with policies that include meal waiver, etc.NOTE: this EE is Full Time & has Benefits elections and eligibility for Benefits Enrollment. She has 1 spouse dependent.",
+      "userRole": {
+        "default": "Employee USA - HCM Segments",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Roberto Howard",
+        "managerUserName": "hmanagerus"
+      },
+      "vertical": "Healthcare (US) - Assisted Living"
+    },
+    {
+      "userName": "hmanagerus",
+      "firstName": "Roberto",
+      "lastName": "Howard",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Healthcare USA, Advanced Scheduling. Has access only to the Healthcare (US), Sunny Valley (Assisted Living)",
+      "userRole": {
+        "default": "Manager - HCM Segments",
+        "additional": []
       },
       "reportsTo": {
         "managerName": "Jane Matsumiya",
         "managerUserName": "hrexecutiveglobal"
       },
-      "vertical": "Customer Service (US)"
+      "vertical": "Healthcare (US) - Assisted Living"
     },
     {
       "userName": "csworkerus",
       "firstName": "Ada",
       "lastName": "Watts",
-      "purpose": "Used to show the employee experience for USA. Aaliyah also has an active Child Support garnishment on record.",
+      "purpose": "Purpose: Used to show the employee experience for USA. Aahliyah also has an active Child Support garnishment on record.",
       "userRole": {
         "default": "Employee USA - HCM",
         "additional": [
@@ -41,10 +928,12 @@
       "userName": "csworkerus.punch",
       "firstName": "Danica",
       "lastName": "McKay",
-      "purpose": "Purpose: Used to show employee punching. Default User Role: Employee USA - HCM.",
+      "purpose": "Purpose: Used to show employee punching",
       "userRole": {
         "default": "Employee USA - HCM",
-        "additional": []
+        "additional": [
+          "Employee USA - HCM"
+        ]
       },
       "reportsTo": {
         "managerName": "Abby Heinerman",
@@ -56,7 +945,7 @@
       "userName": "csonboardingus",
       "firstName": "Jessica",
       "lastName": "Connor",
-      "purpose": "Purpose: Used to demo the USA employee onboarding experience. Default User Role: Onboarding USA.",
+      "purpose": "Purpose: Used to demo the USA employee onboarding experience",
       "userRole": {
         "default": "Onboarding USA",
         "additional": []
@@ -71,14 +960,14 @@
       "userName": "Ali.Duran",
       "firstName": "Ali",
       "lastName": "Duran",
-      "purpose": "Purpose: Demonstrate Dependent Verification. Ali has added a spouse dependent and her current plan year Annual Enrollment is in progress.",
+      "purpose": "Purpose: Demonstrate Dependent Verification. Ali has added a spouse dependent and her current plan year Annual Enrollment is in progress with all selections made & ready to submit; her submission will require Dependent Verification. Go here for more details.",
       "userRole": {
-        "default": "Benefits - Dependent Verification",
+        "default": "",
         "additional": []
       },
       "reportsTo": {
         "managerName": "Abby Heinerman",
-        "managerUserName": "csmanagerus"
+        "managerUserName": "csamangerus"
       },
       "vertical": "Customer Service (US)"
     },
@@ -86,14 +975,14 @@
       "userName": "Alex.Anderson",
       "firstName": "Alex",
       "lastName": "Anderson",
-      "purpose": "Purpose: Demonstrate an employee who's holiday pay rate is based upon average hours.",
+      "purpose": "Purpose: Demonstrate an employee who's holiday pay rate is based upon average hours. Alex is assigned to the Pay Policy \"*CS Hourly USA (Avg Hol Hrs)\" which leverages the Holiday Average Rule. In this case, it has a 28 day (4 week) look back and is calculating over 20 shifts to get the holiday rate.",
       "userRole": {
-        "default": "Holiday Rate - Avg Hrs Calc",
+        "default": "",
         "additional": []
       },
       "reportsTo": {
         "managerName": "Abby Heinerman",
-        "managerUserName": "csmanagerus"
+        "managerUserName": "csamangerus"
       },
       "vertical": "Customer Service (US)"
     },
@@ -101,9 +990,9 @@
       "userName": "csterminatedus",
       "firstName": "Ashley",
       "lastName": "Garcia",
-      "purpose": "Purpose: Used to show limited access for a terminated employee.",
+      "purpose": "Purpose: Used to show limited access for a terminated employee",
       "userRole": {
-        "default": "Terminated",
+        "default": "TerminatedTerminated on January 6, 2021. Last pay date January 15, 2021.",
         "additional": []
       },
       "reportsTo": {
@@ -113,12 +1002,27 @@
       "vertical": "Customer Service (US)"
     },
     {
+      "userName": "csmanagerus",
+      "firstName": "Abby",
+      "lastName": "Heinerman",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service USA. Has access only to the Customer Service (US) site of the org. Abby is a Salaried employee with both a primary and secondary work assignment and has a GL split configured between them.\u00a0  Default User Role  : Manager - HCM Additional User Roles : Manager - WFM; Manager - HCM Period Review",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (US)"
+    },
+    {
       "userName": "cstalentus",
       "firstName": "Caleb",
       "lastName": "Wallace",
-      "purpose": "Purpose: Used to show full HCM admin experience for the USA Customer Service org.",
+      "purpose": "Purpose: Used to show full HCM admin experience for the USA Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access  only  to the Customer Service (US) of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens Default User Role : Admin Practitioner - USA",
       "userRole": {
-        "default": "Admin Practitioner - USA",
+        "default": "",
         "additional": []
       },
       "reportsTo": {
@@ -133,7 +1037,7 @@
       "lastName": "Anderson",
       "purpose": "Alice has an active Support garnishment on record.",
       "userRole": {
-        "default": "Employee",
+        "default": "",
         "additional": []
       },
       "reportsTo": {
@@ -148,7 +1052,7 @@
       "lastName": "Johnson",
       "purpose": "",
       "userRole": {
-        "default": "Pre-start",
+        "default": "",
         "additional": []
       },
       "reportsTo": {
@@ -161,9 +1065,9 @@
       "userName": "psterminatedcan",
       "firstName": "Laura",
       "lastName": "Green",
-      "purpose": "Purpose: Used to show limited access for a terminated employee in CAN.",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in CAN",
       "userRole": {
-        "default": "Terminated",
+        "default": "TerminatedTerminated on March 23, 2023",
         "additional": []
       },
       "reportsTo": {
@@ -176,9 +1080,9 @@
       "userName": "psmanagercan",
       "firstName": "Sabrina",
       "lastName": "Tan",
-      "purpose": "Has access only to the Public Sector (CAN) site of the org.",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org",
       "userRole": {
-        "default": "Manager",
+        "default": "",
         "additional": []
       },
       "reportsTo": {
@@ -186,6 +1090,1975 @@
         "managerUserName": "hrexecutiveglobal"
       },
       "vertical": "Public Sector (CAN)"
+    },
+    {
+      "userName": "csworkerire",
+      "firstName": "Amy",
+      "lastName": "Murphy",
+      "purpose": "Purpose: Used to show the employee experience for IRE.",
+      "userRole": {
+        "default": "Employee IRE- HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Sophie Flynn",
+        "managerUserName": "csmanagerire"
+      },
+      "vertical": "Customer Service (IRE)"
+    },
+    {
+      "userName": "csonboardingire",
+      "firstName": "Daniel",
+      "lastName": "Kelly",
+      "purpose": "Purpose: Used to demo the IRE employee onboarding experience",
+      "userRole": {
+        "default": "Employee IRE- HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Sophie Flynn",
+        "managerUserName": "csmanagerire"
+      },
+      "vertical": "Customer Service (IRE)"
+    },
+    {
+      "userName": "csterminatedire",
+      "firstName": "N/A",
+      "lastName": "",
+      "purpose": "Purpose: Used to show limited access for a terminated employee",
+      "userRole": {
+        "default": "TerminatedTerminated on January 6, 2021. Last pay date January 15, 2021.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Sophie Flynn",
+        "managerUserName": "csmanagerire"
+      },
+      "vertical": "Customer Service (IRE)"
+    },
+    {
+      "userName": "csmanagerire",
+      "firstName": "Sophie",
+      "lastName": "Flynn",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service IRE. Has access only to the Customer Service (IRE) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": [
+          "Manager - HCM - Retail"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (IRE)"
+    },
+    {
+      "userName": "cstalentire",
+      "firstName": "Thomas",
+      "lastName": "Flanagan",
+      "purpose": "Purpose:",
+      "userRole": {
+        "default": "Admin Practitioner - USA",
+        "additional": [
+          "Employee IRE- HCM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Sophie Flynn",
+        "managerUserName": "csmangerire"
+      },
+      "vertical": "Customer Service (IRE)"
+    },
+    {
+      "userName": "adminire",
+      "firstName": "N/A",
+      "lastName": "",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "N/A",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (IRE)"
+    },
+    {
+      "userName": "icpworkerfra",
+      "firstName": "Agathe",
+      "lastName": "Granger",
+      "purpose": "Purpose: Used to show the employee experience for FRA Factory.",
+      "userRole": {
+        "default": "Global Employee - FRA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerfra"
+      },
+      "vertical": "ICP Factory - France (FRA)"
+    },
+    {
+      "userName": "icponboardingfra",
+      "firstName": "Jade",
+      "lastName": "Moreau",
+      "purpose": "Purpose: Used to demo the FRA employee onboarding experience within Factory",
+      "userRole": {
+        "default": "Onboarding FRA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "icpmanagerfra"
+      },
+      "vertical": "ICP Factory - France (FRA)"
+    },
+    {
+      "userName": "icpmanagerfra",
+      "firstName": "Emma",
+      "lastName": "Dubois",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (FRA). Has access only to the Factory (FRA) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access\u00a0only\u00a0to the Factory (FRA) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager FRA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": "adminfra"
+      },
+      "vertical": "ICP Factory - France (FRA)"
+    },
+    {
+      "userName": "adminfra",
+      "firstName": "Adam",
+      "lastName": "Moulin",
+      "purpose": "Purpose: Used to show full administration experience for the entire org, including all setup and configuration screens. Employee's culture is set to French.\u00a0Has ability to add Succession plans for FRA employeesIs a service role (can cancel payrolls, update legal entity names, etc.)Default payroll favorites view has FRA pay groups only (all other global views are available, just not as default view)",
+      "userRole": {
+        "default": "Admin - AC",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "N/A",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - France (FRA)"
+    },
+    {
+      "userName": "psworkerus",
+      "firstName": "Abby",
+      "lastName": "Rowe",
+      "purpose": "Abby has an active Spousal Support garnishment on record.",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Emily Bates",
+        "managerUserName": "psmanagerus"
+      },
+      "vertical": "Public Sector (US)"
+    },
+    {
+      "userName": "psonboardingus",
+      "firstName": "Jane",
+      "lastName": "Andrews",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Emily Bates",
+        "managerUserName": "psmanagerus"
+      },
+      "vertical": "Public Sector (US)"
+    },
+    {
+      "userName": "psterminatedus",
+      "firstName": "Samantha",
+      "lastName": "Jones",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in USA",
+      "userRole": {
+        "default": "Terminated\n                                            \n                                        \n                                        \n                                            \n                                                Terminated on March 23, 2023",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "N/A",
+        "managerUserName": ""
+      },
+      "vertical": "Public Sector (US)"
+    },
+    {
+      "userName": "psmanagerus",
+      "firstName": "Emily",
+      "lastName": "Bates",
+      "purpose": "Has access only to the Public Sector (US) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector (US)"
+    },
+    {
+      "userName": "csworkeruk",
+      "firstName": "Abby",
+      "lastName": "Abrams",
+      "purpose": "Purpose: Used to show the employee experience for UK.",
+      "userRole": {
+        "default": "Employee UK - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Fiona Field",
+        "managerUserName": "csmanageruk"
+      },
+      "vertical": "Customer Service (UK)"
+    },
+    {
+      "userName": "csonboardinguk",
+      "firstName": "Peter",
+      "lastName": "Winton",
+      "purpose": "Purpose: Used to demo the UK employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding UK",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Fiona Field",
+        "managerUserName": "csmanageruk"
+      },
+      "vertical": "Customer Service (UK)"
+    },
+    {
+      "userName": "csterminateduk",
+      "firstName": "Martin",
+      "lastName": "Alexander",
+      "purpose": "Purpose: Used to show limited access for a terminated employee",
+      "userRole": {
+        "default": "TerminatedTerminated on January 6, 2021. Last pay date January 15, 2021.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Fiona Field",
+        "managerUserName": "csmanageruk"
+      },
+      "vertical": "Customer Service (UK)"
+    },
+    {
+      "userName": "csmanageruk",
+      "firstName": "Fiona",
+      "lastName": "Field",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service UK. Has access only to the Customer Service (UK) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (UK)"
+    },
+    {
+      "userName": "cstalentuk",
+      "firstName": "Jennifer",
+      "lastName": "Edwards",
+      "purpose": "Purpose: Used to show full HCM admin experience for the UK Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Customer Service UK of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - UK",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Beverly Villa",
+        "managerUserName": "adminuk"
+      },
+      "vertical": "Customer Service (UK)"
+    },
+    {
+      "userName": "adminuk",
+      "firstName": "Beverly",
+      "lastName": "Villa",
+      "purpose": "Purpose: Used to show full administration experience for the entire org, including all setup and configuration screens. Employee's culture is set to English (UK).Has ability to add Succession plans for UKemployeesIs a service role (can cancel payrolls, update legal entity names, etc.)Default payroll favorites view has UK pay groups only (all other global views are available, just not as default view)Default User Role\u00a0: Admin - AC",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (UK)"
+    },
+    {
+      "userName": "csworkernzl",
+      "firstName": "Amy",
+      "lastName": "Turner",
+      "purpose": "Purpose: Used to show the employee experience for NZLCore employee experience\u00a0Fleshed out employee profile\u00a0Leave balances and requests in play",
+      "userRole": {
+        "default": "Employee NZL - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Caroline Birchfield",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "csonboardingnzl",
+      "firstName": "Ben",
+      "lastName": "Jacobson",
+      "purpose": "Purpose: Used to demo the NZL employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding NZL",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Caroline Birchfield",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "csmanagernzl",
+      "firstName": "Carol",
+      "lastName": "Burchfield",
+      "purpose": "Purpose: Used to demo the NZL Manager experience including management of Performance, Talent and Succession feature setsHas access only to the Customer Service (NZL) site of the org",
+      "userRole": {
+        "default": "Manager NZL",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Norah Smith",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "cstalentnzl",
+      "firstName": "Patrice",
+      "lastName": "Jacobs",
+      "purpose": "Purpose: Used to show full HCM admin experience for the NZL Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Customer Service NZL of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - NZL",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "csterminatednzl",
+      "firstName": "Sam",
+      "lastName": "Jones",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in NZL",
+      "userRole": {
+        "default": "TerminatedTerminated on August 10, 2023",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "csmanagernzlcomp",
+      "firstName": "Neil",
+      "lastName": "Fleming",
+      "purpose": "Purpose: Has the overview of Merit and Bonus NZL Compensation Cycle",
+      "userRole": {
+        "default": "Manager NZL - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "adminnzl",
+      "firstName": "Norah",
+      "lastName": "Smith",
+      "purpose": "\u00b7",
+      "userRole": {
+        "default": "Admin Practitioner - NZLPurpose: Used to show full HCM admin experience for NZL Customer Service orgs, including: HR, Benefits, Payroll, Recruiting, Compensation...\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Has access\u00a0only\u00a0to the Customer Service  NZL sites of the org\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Has a simplified Payroll admin view\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Does NOT have access to any configuration screens\u00b7",
+        "additional": [
+          "Admin - ACPurpose: Used to show full administration experience for the entire org, including all setup and configuration screens. Employee's culture is set to English (AUS).\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Has ability to add Succession plans for NZL\u00a0 employees\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Is a service role (can cancel payrolls, update legal entity names, etc.)Default payroll favorites view has NZL pay groups only (all other global views are available, just not as default view)"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "hrexecutiveglobal",
+      "firstName": "Jane",
+      "lastName": "Matsumiya",
+      "purpose": "Purpose: Used to show global Director / VP level view of the organization for talent modules. All vertical and global sites report into this user.\u00a0\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Culture is set to English (US).\u00a0 Change culture to your preference after backfilling.\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Dayforce Journey Demo",
+      "userRole": {
+        "default": "Executive - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Eddie Kim",
+        "managerUserName": "CEO"
+      },
+      "vertical": "Customer Service (NZL)"
+    },
+    {
+      "userName": "psparksworkerus",
+      "firstName": "Brandy",
+      "lastName": "Peck",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Phil Eaton",
+        "managerUserName": "psparksmanagerus"
+      },
+      "vertical": "Public Sector Parks & Recreation (USA)"
+    },
+    {
+      "userName": "psparksmanagerus",
+      "firstName": "Phil",
+      "lastName": "Eaton",
+      "purpose": "Has access only to the Public Sector (US) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Parks & Recreation (USA)"
+    },
+    {
+      "userName": "icpworkermys",
+      "firstName": "Aati",
+      "lastName": "Yap",
+      "purpose": "Purpose: Used to show the employee experience for MYS Factory.",
+      "userRole": {
+        "default": "Global Employee - MYS",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Amaal Ali",
+        "managerUserName": "mfgmanagermys"
+      },
+      "vertical": "ICP Factory - Malaysia (MYS)"
+    },
+    {
+      "userName": "icpmanagermys",
+      "firstName": "Amaal",
+      "lastName": "Ali",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (MYS). Has access only to the Factory (MYS) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access\u00a0only\u00a0to the Factory (MYS) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager MYS",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Adam Leong",
+        "managerUserName": "adminmys"
+      },
+      "vertical": "ICP Factory - Malaysia (MYS)"
+    },
+    {
+      "userName": "adminmys",
+      "firstName": "Adam",
+      "lastName": "Leong",
+      "purpose": "Purpose: Used to show full administration experience for the entire org, including all setup and configuration screens. Employee's culture is set to English (US).Has ability to add Succession plans for MYS employeesIs a service role (can cancel payrolls, update legal entity names, etc.)Default payroll favorites view has MYS pay groups only (all other global views are available, just not as default view)",
+      "userRole": {
+        "default": "Admin - AC",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "N/A",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Malaysia (MYS)"
+    },
+    {
+      "userName": "icponboardingmys",
+      "firstName": "Johan",
+      "lastName": "Soh",
+      "purpose": "Purpose: Used to demo the MYS employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding MYS",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Malaysia (MYS)"
+    },
+    {
+      "userName": "psparksworkercan",
+      "firstName": "Brian",
+      "lastName": "Cain",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Ella Simmons",
+        "managerUserName": "psparksmanagercan"
+      },
+      "vertical": "Public Sector Parks & Recreation (CAN)"
+    },
+    {
+      "userName": "psparksmanagercan",
+      "firstName": "Ella",
+      "lastName": "Simmons",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Parks & Recreation (CAN)"
+    },
+    {
+      "userName": "psmuniworkerus",
+      "firstName": "Justin",
+      "lastName": "Ortiz",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Rhonda Thompson",
+        "managerUserName": "psmunimanagerus"
+      },
+      "vertical": "Public Sector Municipal Staff (USA)"
+    },
+    {
+      "userName": "psmunimanagerus",
+      "firstName": "Rhonda",
+      "lastName": "Thompson",
+      "purpose": "Has access only to the Public Sector (US) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Municipal Staff (USA)"
+    },
+    {
+      "userName": "psclericalworkerus",
+      "firstName": "Dillon",
+      "lastName": "MacDaniel",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Johanna Gardner",
+        "managerUserName": "psclericalmanagerus"
+      },
+      "vertical": "Public Sector Clerical Staff (USA)"
+    },
+    {
+      "userName": "psclericalmanagerus",
+      "firstName": "Johanna",
+      "lastName": "Gardner",
+      "purpose": "Has access only to the Public Sector (US) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Clerical Staff (USA)"
+    },
+    {
+      "userName": "psclericalworkercan",
+      "firstName": "Rachel",
+      "lastName": "Vargas",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Laura Payne",
+        "managerUserName": "psclericalmanagercan"
+      },
+      "vertical": "Public Sector Clerical Staff (CAN)"
+    },
+    {
+      "userName": "psclericalmanagercan",
+      "firstName": "Laura",
+      "lastName": "Payne",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Clerical Staff (CAN)"
+    },
+    {
+      "userName": "psmuniworkercan",
+      "firstName": "Antonio",
+      "lastName": "Shelby",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Cynthia Peterson",
+        "managerUserName": "psmunimanagercan"
+      },
+      "vertical": "Public Sector Municipal Staff (CAN)"
+    },
+    {
+      "userName": "psmunimanagercan",
+      "firstName": "Cynthia",
+      "lastName": "Peterson",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Municipal Staff (CAN)"
+    },
+    {
+      "userName": "pssocialworkercan",
+      "firstName": "Abraham",
+      "lastName": "Reilly",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Phoebe Bond",
+        "managerUserName": "pssocialmanagerus"
+      },
+      "vertical": "Public Sector Social Services (USA)"
+    },
+    {
+      "userName": "pssocialmanagerus",
+      "firstName": "Phoebe",
+      "lastName": "Bond",
+      "purpose": "Has access only to the Public Sector (US) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Social Services (USA)"
+    },
+    {
+      "userName": "pstalentus",
+      "firstName": "Olive",
+      "lastName": "Lopez",
+      "purpose": "Has access only to the Public Sector (US) of the orgUsed to show the administration experience for HR, Benefits, Payroll, Recruiting, Compensation, etc.Payroll is a very simple viewDoes not have access to any configuration screens",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Macon Burke",
+        "managerUserName": "adminus"
+      },
+      "vertical": "Public Sector Social Services (USA)"
+    },
+    {
+      "userName": "pssocialworkercan",
+      "firstName": "Michael",
+      "lastName": "Middleton",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Dawn Horne",
+        "managerUserName": "pssocialmanagercan"
+      },
+      "vertical": "Public Sector Social Services (CAN)"
+    },
+    {
+      "userName": "pssocialmanagercan",
+      "firstName": "Dawn",
+      "lastName": "Horne",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Social Services (CAN)"
+    },
+    {
+      "userName": "mfgworkerus",
+      "firstName": "Aaron",
+      "lastName": "Glover",
+      "purpose": "Purpose: Used to show the employee experience for USA Factory. Aaron has both a primary & secondary Work Assignment in two different departments. He also has an active Spousal Support Garnishment.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Karen Cooley",
+        "managerUserName": "mfgmanagerus"
+      },
+      "vertical": "Factory (US)"
+    },
+    {
+      "userName": "mfgworkerus.punch",
+      "firstName": "Jenny",
+      "lastName": "Cheng",
+      "purpose": "Purpose: Used to show employee punching within USA Factory",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - HCM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Karen Cooley",
+        "managerUserName": "mfgmanagerus"
+      },
+      "vertical": "Factory (US)"
+    },
+    {
+      "userName": "mfgonboardingus",
+      "firstName": "Connor",
+      "lastName": "Mendoza",
+      "purpose": "Purpose: Used to demo the USA employee onboarding experience within Factory",
+      "userRole": {
+        "default": "Onboarding USA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Karen Cooley",
+        "managerUserName": "mfgmanagerus"
+      },
+      "vertical": "Factory (US)"
+    },
+    {
+      "userName": "mfgterminatedus",
+      "firstName": "Alex",
+      "lastName": "Larson",
+      "purpose": "Purpose: Used to show limited access for a terminated employee",
+      "userRole": {
+        "default": "TerminatedTerminated on January 6, 2021. Last pay date January 15, 2021.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Karen Cooley",
+        "managerUserName": "mfgmanagerus"
+      },
+      "vertical": "Factory (US)"
+    },
+    {
+      "userName": "mfgmanagerus",
+      "firstName": "Karen",
+      "lastName": "Cooley",
+      "purpose": "Purpose: Used to show full HCM admin experience for the USA Factory org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Factory (US) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Factory (US)"
+    },
+    {
+      "userName": "mfgtalentus",
+      "firstName": "Carl",
+      "lastName": "Ashford",
+      "purpose": "Purpose: Used to show full HCM admin experience for the USA Factory org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Factory (US) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - USA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Macon Burke",
+        "managerUserName": ""
+      },
+      "vertical": "Factory (US)"
+    },
+    {
+      "userName": "psemergworkerus",
+      "firstName": "Corine",
+      "lastName": "Armstrong",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Shana Bates",
+        "managerUserName": "psemergmanagerus"
+      },
+      "vertical": "Public Sector Emergency Services (USA)"
+    },
+    {
+      "userName": "psemergmanagerus",
+      "firstName": "Shana",
+      "lastName": "Bates",
+      "purpose": "Has access only to the Public Sector (US) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Emergency Services (USA)"
+    },
+    {
+      "userName": "psemergworkercan",
+      "firstName": "Dana",
+      "lastName": "Barnett",
+      "purpose": "",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Henry Palmer",
+        "managerUserName": "psemergmanagercan"
+      },
+      "vertical": "Public Sector Emergency Services (CAN)"
+    },
+    {
+      "userName": "psemergmanagercan",
+      "firstName": "Henry",
+      "lastName": "Palmer",
+      "purpose": "Has access only to the Public Sector (CAN) site of the org",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Public Sector Emergency Services (CAN)"
+    },
+    {
+      "userName": "csworkerdeu",
+      "firstName": "Andreas",
+      "lastName": "Grunewalde",
+      "purpose": "Purpose: Used to show the employee experience for CANDisabled Employee, receives extra time off.",
+      "userRole": {
+        "default": "Employee DEU",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Karin Hahn",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (DEU)"
+    },
+    {
+      "userName": "csonboardingdeu",
+      "firstName": "Christian",
+      "lastName": "Bauer",
+      "purpose": "Purpose: Used to demo the Customer Service DEU employee Pre-Start onboarding experience",
+      "userRole": {
+        "default": "Employee DEU",
+        "additional": [
+          "Onboarding DEU"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Karin Hahn",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (DEU)"
+    },
+    {
+      "userName": "csmanagerdeu",
+      "firstName": "Karin",
+      "lastName": "Hahn",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service DEU. Has access only to the Customer Service DEU site of the org",
+      "userRole": {
+        "default": "Manager - DEU",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (DEU)"
+    },
+    {
+      "userName": "cstalentdeu",
+      "firstName": "Ulrike",
+      "lastName": "Finkel",
+      "purpose": "Purpose: Used to show full HCM admin experience for the DEU Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Customer Service DEU of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner DEU",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Karin Hahn",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (DEU)"
+    },
+    {
+      "userName": "csterminateddeu",
+      "firstName": "Diana",
+      "lastName": "Himmel",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in DEU",
+      "userRole": {
+        "default": "TerminatedTerminated on January 4, 2023.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (DEU)"
+    },
+    {
+      "userName": "csworkersgp",
+      "firstName": "Allan",
+      "lastName": "Tan",
+      "purpose": "Purpose: Used to show the employee experience for SGPCore employee experience profileFleshed out HR record\u00a0Balances to apply for leave",
+      "userRole": {
+        "default": "Employee SGP - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Dean Koh",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (SGP)"
+    },
+    {
+      "userName": "csonboardingsgp",
+      "firstName": "Siti",
+      "lastName": "Fatimah",
+      "purpose": "Purpose: Used to demo the SGP employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding SG",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Dean Koh",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (SGP)"
+    },
+    {
+      "userName": "csmanagersgp",
+      "firstName": "Dean",
+      "lastName": "Koh",
+      "purpose": "Purpose: Used to demo the SPG Manager experience including management of Scheduling, Timesheets, Leave Approvals, Performance\u00a0Has access only to the Customer Service (SGP) site of the orgTalent / Recruiting management",
+      "userRole": {
+        "default": "Manager SGP",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Samantha Chin Lee Hwa",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (SGP)"
+    },
+    {
+      "userName": "cstalentsgp",
+      "firstName": "Cheng",
+      "lastName": "Goh",
+      "purpose": "Purpose: Used to show full HCM admin experience for the SGP Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Customer Service SGP of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - SGP",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (SGP)"
+    },
+    {
+      "userName": "csterminatedsgp",
+      "firstName": "Tom",
+      "lastName": "Goh",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in SGP",
+      "userRole": {
+        "default": "TerminatedTerminated on August 10, 2023",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (SGP)"
+    },
+    {
+      "userName": "csmanagersgpcomp",
+      "firstName": "Averia",
+      "lastName": "Tan",
+      "purpose": "Purpose: Used to show and Demo Compensation Cycle and Compensation Administration for SGP.",
+      "userRole": {
+        "default": "Manager SGP - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (SGP)"
+    },
+    {
+      "userName": "icpworkermex",
+      "firstName": "Ana",
+      "lastName": "Salazar",
+      "purpose": "Purpose: Used to show the employee experience for MEX Factory.",
+      "userRole": {
+        "default": "Global Employee - MEX",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Alicia Tibon Flores",
+        "managerUserName": "mfgmanagermex"
+      },
+      "vertical": "ICP Factory - Mexico (MEX)"
+    },
+    {
+      "userName": "icpmanagermex",
+      "firstName": "Alicia",
+      "lastName": "Tibon",
+      "purpose": "Purpose: Used to show the Manager experience for Factory (MEX). Has access only to the Factory (MEX) site of the org. Alicia is an Hourly employee with a primary work assignment.Has access\u00a0only\u00a0to the Factory (MEX) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager MEX",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Francisco Coronado Romo",
+        "managerUserName": "adminmex"
+      },
+      "vertical": "ICP Factory - Mexico (MEX)"
+    },
+    {
+      "userName": "adminmex",
+      "firstName": "Francisco",
+      "lastName": "Coronado",
+      "purpose": "Purpose: Used to show full administration experience for the entire org, including all setup and configuration screens. Employee's culture is set to English (US).Has ability to add Succession plans for MEX employeesIs a service role (can cancel payrolls, update legal entity names, etc.)Default payroll favorites view has MEX pay groups only (all other global views are available, just not as default view)",
+      "userRole": {
+        "default": "Admin - AC",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "N/A",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Mexico (MEX)"
+    },
+    {
+      "userName": "icponboardingmex",
+      "firstName": "Zapopa",
+      "lastName": "Salazar",
+      "purpose": "Purpose: Used to demo the MEX employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding MEX",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "ICP Factory - Mexico (MEX)"
+    },
+    {
+      "userName": "hcworkerus",
+      "firstName": "Aja",
+      "lastName": "Thompson",
+      "purpose": "Purpose: Used to show the employee experience for USA Healthcare. Aja has an active Spousal Support garnishment on record.",
+      "userRole": {
+        "default": "Employee USA - HCM",
+        "additional": [
+          "Employee USA - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFM*NOTE: Aja is salaried and does not showcase attendance exceptions."
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Rudy Blausey",
+        "managerUserName": "hcmanagerus"
+      },
+      "vertical": "Healthcare (US) - Acute & Home Health"
+    },
+    {
+      "userName": "hconboardingus",
+      "firstName": "Kristine",
+      "lastName": "Calderon",
+      "purpose": "Purpose: Used to demo the USA Healthcare employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding USA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Rudy Blausey",
+        "managerUserName": "hcmanagerus"
+      },
+      "vertical": "Healthcare (US) - Acute & Home Health"
+    },
+    {
+      "userName": "hcmanagerus",
+      "firstName": "Rudy",
+      "lastName": "Blausey",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Healthcare USA. Has access only to the Healthcare (US) site of the org",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": [
+          "Manager - WFM",
+          "Manager - HCM Period Review"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Healthcare (US) - Acute & Home Health"
+    },
+    {
+      "userName": "hcterminatedus",
+      "firstName": "Carol",
+      "lastName": "Ngo",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in CAN",
+      "userRole": {
+        "default": "TerminatedTerminated on January 4, 2024",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Healthcare (US) - Acute & Home Health"
+    },
+    {
+      "userName": "hctalentus",
+      "firstName": "Francisco",
+      "lastName": "Kidwell",
+      "purpose": "Purpose: Used to show full HCM admin experience for the USA Healthcare org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Healthcare (US) of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - USA",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Macon Burke",
+        "managerUserName": "adminus"
+      },
+      "vertical": "Healthcare (US) - Acute & Home Health"
+    },
+    {
+      "userName": "csworkeraus",
+      "firstName": "Aaron",
+      "lastName": "Maloney",
+      "purpose": "Purpose: Used to show the employee experience for AUSCore employee experience\u00a0Fleshed out employee profile\u00a0Leave balances and requests in play",
+      "userRole": {
+        "default": "Employee AUS - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Chloe Goddard",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "csonboardingaus",
+      "firstName": "Benjamin",
+      "lastName": "Jacobs",
+      "purpose": "Purpose: Used to demo the AUS employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding ANZ",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Chloe Goddard",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "csmanageraus",
+      "firstName": "Chloe",
+      "lastName": "Goddard",
+      "purpose": "Purpose: Used to demo the AUS Manager experience including management of Performance, Talent and Succession feature setsHas access only to the Customer Service (AUS) site of the org",
+      "userRole": {
+        "default": "Manager AUS",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Ava Jones",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "cstalentaus",
+      "firstName": "Emily",
+      "lastName": "Young",
+      "purpose": "Purpose: Used to show full HCM admin experience for the AUS Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Customer Service AUS of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - AUS",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "csterminatedaus",
+      "firstName": "Nate",
+      "lastName": "Thompson",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in AUS",
+      "userRole": {
+        "default": "TerminatedTerminated on August 9, 2023.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "csmanagerauscomp",
+      "firstName": "Bruce",
+      "lastName": "Chen",
+      "purpose": "Purpose: Has the overview of Merit and Bonus AUS Compensation Cycle",
+      "userRole": {
+        "default": "Manager AUS - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "adminaus",
+      "firstName": "Ava",
+      "lastName": "Jones",
+      "purpose": "\u00b7",
+      "userRole": {
+        "default": "Admin Practitioner - AUSPurpose: Used to show full HCM admin experience for the AUS Customer Service orgs, including: HR, Benefits, Payroll, Recruiting, Compensation...\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Has access\u00a0only\u00a0to the Customer Service AUS sites of the org\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Has a simplified Payroll admin view\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Does NOT have access to any configuration screens\u00b7",
+        "additional": [
+          "Admin - ACPurpose: Used to show full administration experience for the entire org, including all setup and configuration screens. Employee's culture is set to English (AUS).\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Has ability to add Succession plans for AUS employees\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Is a service role (can cancel payrolls, update legal entity names, etc.)Default payroll favorites view has AUS pay groups only (all other global views are available, just not as default view)"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "hrexecutiveglobal",
+      "firstName": "Jane",
+      "lastName": "Matsumiya",
+      "purpose": "Purpose: Used to show global Director / VP level view of the organization for talent modules. All vertical and global sites report into this user.\u00a0\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Culture is set to English (US).\u00a0 Change culture to your preference after backfilling.\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Dayforce Journey Demo",
+      "userRole": {
+        "default": "Executive - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Eddie Kim",
+        "managerUserName": "CEO"
+      },
+      "vertical": "Customer Service (AUS)"
+    },
+    {
+      "userName": "csworkerbra",
+      "firstName": "Adriana",
+      "lastName": "Almeida",
+      "purpose": "Purpose: Used to show the employee experience for BRA.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Ant\u00f4nio Valente",
+        "managerUserName": "csmanagerbra"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerbra",
+      "firstName": "Ant\u00f4nio",
+      "lastName": "Valente",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service BRA. Has access only to the Customer Service (BRA) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkerchn",
+      "firstName": "Ai",
+      "lastName": "Au",
+      "purpose": "Purpose: Used to show the employee experience for CHN.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Daiyu Cai",
+        "managerUserName": "csmanagerchn"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerchn",
+      "firstName": "Daiyu",
+      "lastName": "Cai",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service CHN. Has access only to the Customer Service (CHN) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkercri",
+      "firstName": "Alicia",
+      "lastName": "Cruz",
+      "purpose": "Purpose: Used to show the employee experience for CRI.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Angelo Alvarez",
+        "managerUserName": "csmanagercri"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagercri",
+      "firstName": "Angelo",
+      "lastName": "Alvarez",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service CRI. Has access only to the Customer Service (CRI) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkerfra",
+      "firstName": "Abel",
+      "lastName": "Bonnet",
+      "purpose": "Purpose: Used to show the employee experience for FRA.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Alban Grout",
+        "managerUserName": "csmanagerfra"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerfra",
+      "firstName": "Alban",
+      "lastName": "Grout",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service FRA. Has access only to the Customer Service (FRA) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkerind",
+      "firstName": "Aanya",
+      "lastName": "Agarwal",
+      "purpose": "Purpose: Used to show the employee experience for IND.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Divya Amin",
+        "managerUserName": "csmanagerind"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerind",
+      "firstName": "Divya",
+      "lastName": "Amin",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service IND. Has access only to the Customer Service (IND) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkermex",
+      "firstName": "Alejandra",
+      "lastName": "Vargas",
+      "purpose": "Purpose: Used to show the employee experience for MEX.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Christophe Ju\u00e1rez",
+        "managerUserName": "csmanagermex"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagermex",
+      "firstName": "Christophe",
+      "lastName": "Ju\u00e1rez",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service MEX. Has access only to the Customer Service (MEX) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkernld",
+      "firstName": "Amber",
+      "lastName": "Mol",
+      "purpose": "Purpose: Used to show the employee experience for NLD.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Amir van der Meulen",
+        "managerUserName": "csmanagernld"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagernld",
+      "firstName": "Amir",
+      "lastName": "van",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service NLD. Has access only to the Customer Service (NLD) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkerphl",
+      "firstName": "Agila",
+      "lastName": "Aquino",
+      "purpose": "Purpose: Used to show the employee experience for PHL.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Darna Gonzales",
+        "managerUserName": "csmanagerphl"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerphl",
+      "firstName": "Darna",
+      "lastName": "Gonzales",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service PHL. Has access only to the Customer Service (PHL) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkerpol",
+      "firstName": "Alicja",
+      "lastName": "Chmielewska",
+      "purpose": "Purpose: Used to show the employee experience for POL.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Aniela Adamska",
+        "managerUserName": "csmanagerpol"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerpol",
+      "firstName": "Aniela",
+      "lastName": "Adamska",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service POL. Has access only to the Customer Service (POL) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkerswe",
+      "firstName": "\u00c5ke",
+      "lastName": "M\u00e5nsson",
+      "purpose": "Purpose: Used to show the employee experience for SWE.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Amanda Pettersson",
+        "managerUserName": "csmanagerswe"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagerswe",
+      "firstName": "Amanda",
+      "lastName": "Pettersson",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service SWE. Has access only to the Customer Service (SWE) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkertha",
+      "firstName": "Arpa",
+      "lastName": "Yu",
+      "purpose": "Purpose: Used to show the employee experience for THA.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Beam Lee",
+        "managerUserName": "csmanagertha"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagertha",
+      "firstName": "Beam",
+      "lastName": "Lee",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service THA. Has access only to the Customer Service (THA) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkermys",
+      "firstName": "Aatiya",
+      "lastName": "Ali",
+      "purpose": "Purpose: Used to show the employee experience for MYS.",
+      "userRole": {
+        "default": "Employee Global - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Nazra Chan",
+        "managerUserName": "csmanagermys"
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csmanagermys",
+      "firstName": "Nazra",
+      "lastName": "Chan",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service MYS. Has access only to the Customer Service (MYS) site of the org.",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "",
+        "managerUserName": ""
+      },
+      "vertical": "Customer Service Global (GED)"
+    },
+    {
+      "userName": "csworkercan",
+      "firstName": "Aaron",
+      "lastName": "Atterberry",
+      "purpose": "Purpose: Used to show the employee experience for CAN. Aaron has an active Child Support garnishment on record.",
+      "userRole": {
+        "default": "Employee USA - CAN",
+        "additional": [
+          "Employee CAN - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Brande Brownell",
+        "managerUserName": "csmanagercan"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csflexcan",
+      "firstName": "Anna",
+      "lastName": "Flex",
+      "purpose": "Purpose: to demonstrate Flex Credit enrollments",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Brande Brownell",
+        "managerUserName": "csmanagercan"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csworkercan.punch",
+      "firstName": "Leonard",
+      "lastName": "Robins",
+      "purpose": "Purpose: Used to show employee punching",
+      "userRole": {
+        "default": "Employee CAN - HCM",
+        "additional": [
+          "Employee CAN - HCM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Brande Brownell",
+        "managerUserName": "csmanagercan"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csworkercan.fr",
+      "firstName": "Antoine",
+      "lastName": "Timothee",
+      "purpose": "Purpose: Used to show the employee experience for CAN French",
+      "userRole": {
+        "default": "Employee USA - CAN",
+        "additional": [
+          "Employee CAN - WFM/Payroll/Benefits",
+          "Employee USA - WFM/Payroll",
+          "Employee USA - WFMCan also show CCQ (Commision de la construction du Qu\u00e9bec) earnings and deductions. Add \u201cCCQ Project 1\u201d to his time entry and you should see his rate change to $38.46/hour, and you can see the earnings and deductions in the pay stub."
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Audrey Charlotte",
+        "managerUserName": "csmanagercan.fr"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csonboardingcan",
+      "firstName": "Maria",
+      "lastName": "Sullivan",
+      "purpose": "Purpose: Used to demo the CAN employee onboarding experience",
+      "userRole": {
+        "default": "Onboarding CAN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Brande Brownell",
+        "managerUserName": "csmanagercan"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csoboardingcan.fr",
+      "firstName": "Andrew",
+      "lastName": "Li",
+      "purpose": "Purpose: Used to demo the CAN French employee onboarding experience",
+      "userRole": {
+        "default": "",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Rene Lajoie-Quebec",
+        "managerUserName": "Rene.Lajoie-Quebec"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csterminatedcan",
+      "firstName": "Ashley",
+      "lastName": "MacDonald",
+      "purpose": "Purpose: Used to show limited access for a terminated employee in CAN",
+      "userRole": {
+        "default": "TerminatedTerminated on January 6, 2021. Last pay date January 15, 2021.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Brande Brownell",
+        "managerUserName": "csmanagercan"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csmanagercan",
+      "firstName": "Brande",
+      "lastName": "Brownell",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service CAN. Has access only to the Customer Service CAN site of the org",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": [
+          "Manager - WFM",
+          "Manager - HCM Period Review"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "csmanagercan.fr",
+      "firstName": "Audrey",
+      "lastName": "Charlotte",
+      "purpose": "Purpose:\u00a0 Used to show the Manager experience for Customer Service CAN French",
+      "userRole": {
+        "default": "Manager - HCM",
+        "additional": [
+          "Manager - WFM",
+          "Manager - HCM Period Review"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "cstalentcan",
+      "firstName": "Caleb",
+      "lastName": "Adams",
+      "purpose": "Purpose: Used to show full HCM admin experience for the CAN Customer Service org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Customer Service CAN of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - CAN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Caitlin Anjou",
+        "managerUserName": "cadmincan"
+      },
+      "vertical": "Customer Service (CAN)"
+    },
+    {
+      "userName": "mfgworkercan",
+      "firstName": "Aaron",
+      "lastName": "Jones",
+      "purpose": "Purpose: Used to show the employee experience for CAN Factory",
+      "userRole": {
+        "default": "Employee CAN - HCM",
+        "additional": [
+          "Employee CAN - WFM/Payroll/Benefits",
+          "Employee CAN - WFM/Payroll",
+          "Employee CAN - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Zenaida Weaver",
+        "managerUserName": "mfgmanagercan"
+      },
+      "vertical": "Factory (CAN)"
+    },
+    {
+      "userName": "mfgworkercanu",
+      "firstName": "Beau",
+      "lastName": "House",
+      "purpose": "Purpose: Used to show the employee experience for CAN Factory for a Union employee. Belongs to Union 505 & is assigned a Union Dues deduction that leverages Payroll Expression Rate Table",
+      "userRole": {
+        "default": "Employee CAN - HCM",
+        "additional": [
+          "Employee CAN - WFM/Payroll/Benefits",
+          "Employee CAN - WFM/Payroll",
+          "Employee CAN - WFM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Zenaida Weaver",
+        "managerUserName": "mfgmanagercan"
+      },
+      "vertical": "Factory (CAN)"
+    },
+    {
+      "userName": "mfgworkercan.punch",
+      "firstName": "Carol",
+      "lastName": "Sweeney",
+      "purpose": "Purpose: Used to show employee punching within CAN Factory",
+      "userRole": {
+        "default": "Employee CAN - HCM",
+        "additional": [
+          "Employee CAN - HCM"
+        ]
+      },
+      "reportsTo": {
+        "managerName": "Zenaida Weaver",
+        "managerUserName": "mfgmanagercan"
+      },
+      "vertical": "Factory (CAN)"
+    },
+    {
+      "userName": "mfgonboardingcan",
+      "firstName": "George",
+      "lastName": "Perry",
+      "purpose": "Purpose: Used to demo the CAN employee onboarding experience within Factory",
+      "userRole": {
+        "default": "Onboarding CAN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Zenaida Weaver",
+        "managerUserName": "mfgmanagercan"
+      },
+      "vertical": "Factory (CAN)"
+    },
+    {
+      "userName": "mfgterminatedcan",
+      "firstName": "Frank",
+      "lastName": "Madison",
+      "purpose": "Purpose: Used to show limited access for a terminated employee",
+      "userRole": {
+        "default": "TerminatedTerminated on January 6, 2021. Last pay date January 15, 2021.",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Zenaida Weaver",
+        "managerUserName": "mfgmanagercan"
+      },
+      "vertical": "Factory (CAN)"
+    },
+    {
+      "userName": "mfgmanagercan",
+      "firstName": "Zenaida",
+      "lastName": "Weaver",
+      "purpose": "Purpose: Used to show full HCM admin experience for the CAN Factory org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Factory (CAN) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Manager HCM",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Jane Matsumiya",
+        "managerUserName": "hrexecutiveglobal"
+      },
+      "vertical": "Factory (CAN)"
+    },
+    {
+      "userName": "mfgtalentcan",
+      "firstName": "Cole",
+      "lastName": "Anderson",
+      "purpose": "Purpose: Used to show full HCM admin experience for the CAN Factory org, including: HR, Benefits, Payroll, Recruiting, Compensation...Has access\u00a0only\u00a0to the Factory (CAN) sites of the orgHas a simplified Payroll admin viewDoes NOT have access to any configuration screens",
+      "userRole": {
+        "default": "Admin Practitioner - CAN",
+        "additional": []
+      },
+      "reportsTo": {
+        "managerName": "Caitlin Anjou",
+        "managerUserName": "admincan"
+      },
+      "vertical": "Factory (CAN)"
     }
   ]
 }

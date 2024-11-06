@@ -8,7 +8,7 @@ function OptionsIndex() {
       <h1>
         Welcome to your options page for the extension!
       </h1>
-      <h2>This is the Option UI page!</h2>
+      <h2>This is the Option UI page.</h2>
       <input onChange={(e) => console.log(e.target.value)} value={data} />
     </div>
   )
