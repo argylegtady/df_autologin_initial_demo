@@ -1,6 +1,5 @@
 import { sendToBackground, sendToContentScript } from "@plasmohq/messaging";
-import { useState } from "react";
-import { useReducer } from "react";
+import { useEffect, useState } from 'react';
 import userData from './user.json'; // Adjust the path if necessary
 
 import "./style.css";
@@ -30,13 +29,25 @@ function IndexPopup() {
   const [selectedUser, setSelectedUser] = useState<string | null>(null);
   const [groupBy, setGroupBy] = useState<'vertical' | 'role'>('vertical');
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedVerticals, setSelectedVerticals] = useState<string[]>([]);
+
+  // Retrieve the selected verticals from localStorage on component mount
+  useEffect(() => {
+    const savedVertical = localStorage.getItem('selectedVertical');
+    if (savedVertical) {
+      const jsonVertical = JSON.parse(savedVertical).map(item => item.value);
+      setSelectedVerticals(jsonVertical);
+    }
+  }, []);
+
+  //console.log(selectedVerticals);
 
   const generateId = (persona: Persona) => {
     return `${persona.userName}-${persona.firstName}-${persona.lastName}`;
   };
 
-
   const handleItemClick = async (userName: string) => {
+    console.log(selectedVerticals);
     setSelectedUser(userName);
 
     const persona = personas.find(p => p.userName === userName);
@@ -65,10 +76,11 @@ function IndexPopup() {
     const filtered: { [key: string]: Persona[] } = {};
     Object.entries(grouped).forEach(([key, personas]) => {
       const matchingPersonas = personas.filter(persona =>
-        persona.userName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        persona.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        persona.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        persona.purpose.toLowerCase().includes(searchTerm.toLowerCase())
+        (!selectedVerticals.length || selectedVerticals.includes(persona.vertical)) &&
+        (persona.userName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          persona.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          persona.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          persona.purpose.toLowerCase().includes(searchTerm.toLowerCase()))
       );
       if (matchingPersonas.length > 0) {
         filtered[key] = matchingPersonas;
@@ -112,7 +124,7 @@ function IndexPopup() {
             <div>
               {personas.map((persona) => (
                 <div
-                  key={generateId(persona)}  // Using the generated ID
+                  key={generateId(persona)}
                   onClick={() => handleItemClick(persona.userName)}
                   className={`cursor-pointer border-2 border-blue-600 rounded-lg p-3 mb-2 transition-all ${selectedUser === persona.userName ? 'bg-gray-200' : 'bg-transparent'
                     }`}
@@ -126,8 +138,6 @@ function IndexPopup() {
                   <strong>Reports To:</strong> {persona.reportsTo.managerName} (Username: {persona.reportsTo.managerUserName})<br />
                 </div>
               ))}
-
-
             </div>
           </div>
         ))}
