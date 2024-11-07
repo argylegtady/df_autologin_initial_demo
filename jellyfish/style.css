@@ -1,10 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Clarika+Geometric:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
 
-/* Apply the font globally */
+/* global */
 * {
-  font-family: 'Clarika Geometric', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-primary {
+  @apply bg-blue-600 text-white border-none rounded-lg px-4 py-2 transition-all hover:bg-blue-500 cursor-pointer;
+}
+
+.user-item {
+  @apply cursor-pointer border-2 border-blue-600 rounded-lg p-3 mb-2 transition-all;
+}
+
+.custom-select {
+  @apply border border-gray-300 rounded shadow-sm;
+}
+
+.custom-select__container {
+  @apply w-full h-full;
+}

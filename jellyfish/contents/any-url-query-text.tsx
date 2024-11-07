@@ -2,33 +2,31 @@ import type { PlasmoCSConfig } from "plasmo";
 import { useMessage } from "@plasmohq/messaging/hook";
 
 export const config: PlasmoCSConfig = {
-  all_frames: true,
+  all_frames: false,
   matches: ["https://nademo.dayforcehcm.com/MyDayforce/Mydayforce.aspx"]
 };
 
 const QueryTextAnywhere = () => {
   const { data } = useMessage<string, string>(async (req, res) => {
-    console.log(req.body);
-    const userName = req.body.userName;
-    console.log(userName);
+    //console.log(req.body);
+    const userName = req.body["userName"];
+    //console.log(userName);
     const loginDetails = {
       namespace: "nademo4a",
       username: userName,
       password: "Aromas1$",
     };
 
-    // Function to check and set the input value
     const setInputValue = (inputId: string, value: string, intervalId: NodeJS.Timeout) => {
       const inputElement = document.getElementById(inputId) as HTMLInputElement | null;
       if (inputElement) {
         clearInterval(intervalId);
         inputElement.value = value;
-        return true; // Indicate success
+        return true;
       }
-      return false; // Indicate failure
+      return false;
     };
 
-    // Function to create a polling interval for input fields
     const createInputCheck = (inputId: string, value: string, callback: () => void) => {
       return setInterval(() => {
         if (setInputValue(inputId, value, this)) {
@@ -37,17 +35,10 @@ const QueryTextAnywhere = () => {
       }, 1000);
     };
 
-    // Create intervals for namespace, username, and password inputs
     const checkNamespace = createInputCheck('txtCompanyName', loginDetails.namespace, () => {});
     const checkUsername = createInputCheck('txtUserName', loginDetails.username, () => {});
-    const checkPassword = createInputCheck('txtUserPass', loginDetails.password, () => {
-      const loginButton = document.getElementById('MainContent_loginUI_cmdLogin') as HTMLElement | null;
-      if (loginButton) {
-        loginButton.click(); // Click the login button after setting the password
-      }
-    });
+    const checkPassword = createInputCheck('txtUserPass', loginDetails.password, () => {});
 
-    // Check all inputs in a single interval
     const checkAllInputs = setInterval(() => {
       const namespaceInput = document.getElementById('txtCompanyName') as HTMLInputElement | null;
       const userInput = document.getElementById('txtUserName') as HTMLInputElement | null;
@@ -61,7 +52,7 @@ const QueryTextAnywhere = () => {
         clearInterval(checkAllInputs);
         const loginButton = document.getElementById('MainContent_loginUI_cmdLogin') as HTMLElement | null;
         if (loginButton) {
-          loginButton.click(); // Click the login button when all fields match
+          loginButton.click(); // Cl
         }
         clearInterval(checkNamespace);
         clearInterval(checkUsername);

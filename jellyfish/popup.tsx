@@ -1,6 +1,6 @@
 import { sendToBackground, sendToContentScript } from "@plasmohq/messaging";
 import { useEffect, useState } from 'react';
-import userData from './user.json'; // Adjust the path if necessary
+import userData from './user.json';
 
 import "./style.css";
 
@@ -31,43 +31,28 @@ function IndexPopup() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedVerticals, setSelectedVerticals] = useState<string[]>([]);
 
-  // Retrieve the selected verticals from localStorage on component mount
   useEffect(() => {
     const savedVertical = localStorage.getItem('selectedVertical');
     if (savedVertical) {
-      const jsonVertical = JSON.parse(savedVertical).map(item => item.value);
-      setSelectedVerticals(jsonVertical);
+      setSelectedVerticals(JSON.parse(savedVertical).map((item) => item.value));
     }
   }, []);
 
-  //console.log(selectedVerticals);
-
-  const generateId = (persona: Persona) => {
-    return `${persona.userName}-${persona.firstName}-${persona.lastName}`;
-  };
+  const generateId = (persona: Persona) => `${persona.userName}-${persona.firstName}-${persona.lastName}`;
 
   const handleItemClick = async (userName: string) => {
-    console.log(selectedVerticals);
     setSelectedUser(userName);
-
-    const persona = personas.find(p => p.userName === userName);
+    const persona = personas.find((p) => p.userName === userName);
     if (persona) {
-      const resp = await sendToContentScript({
-        name: "query-selector-text",
-        body: persona
-      });
-
-      console.log(resp.body);
+      const resp = await sendToContentScript({ name: "query-selector-text", body: persona });
+      //console.log(resp.body);
     }
   };
 
   const groupPersonas = () => {
     return personas.reduce((acc: { [key: string]: Persona[] }, persona: Persona) => {
       const key = groupBy === 'vertical' ? persona.vertical : persona.userRole.default;
-      if (!acc[key]) {
-        acc[key] = [];
-      }
-      acc[key].push(persona);
+      acc[key] = acc[key] ? [...acc[key], persona] : [persona];
       return acc;
     }, {});
   };
@@ -75,16 +60,13 @@ function IndexPopup() {
   const filterPersonas = (grouped: { [key: string]: Persona[] }) => {
     const filtered: { [key: string]: Persona[] } = {};
     Object.entries(grouped).forEach(([key, personas]) => {
-      const matchingPersonas = personas.filter(persona =>
+      const matches = personas.filter((persona) =>
         (!selectedVerticals.length || selectedVerticals.includes(persona.vertical)) &&
-        (persona.userName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          persona.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          persona.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          persona.purpose.toLowerCase().includes(searchTerm.toLowerCase()))
+        [persona.userName, persona.firstName, persona.lastName, persona.purpose].some((field) =>
+          field.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
-      if (matchingPersonas.length > 0) {
-        filtered[key] = matchingPersonas;
-      }
+      if (matches.length) filtered[key] = matches;
     });
     return filtered;
   };
@@ -93,9 +75,9 @@ function IndexPopup() {
   const filteredPersonas = filterPersonas(groupedPersonas);
 
   return (
-    <div className="p-4 w-[500px] font-clarika-geometric">
-      <h2 className="text-2xl">Extension</h2>
-      <h1 className="text-4xl font-bold mb-4">User Information</h1>
+    <div className="p-4 w-[500px]">
+      <h2 className="text-2xl font-semibold mb-2">Advisory Demo Instance</h2>
+      <h1 className="text-2xl font-semibold mb-2">Persona Logins</h1><br></br>
       <input
         type="text"
         placeholder="Search..."
@@ -103,17 +85,11 @@ function IndexPopup() {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="w-full p-2 mb-4 border border-gray-300 rounded"
       />
-      <div className="mb-4">
-        <button
-          onClick={() => setGroupBy('vertical')}
-          className="bg-blue-600 text-white border-none rounded-lg px-4 py-2 mx-2 cursor-pointer transition-all hover:bg-blue-500"
-        >
+      <div className="flex mb-4 space-x-2">
+        <button onClick={() => setGroupBy('vertical')} className="btn-primary">
           Group by Vertical
         </button>
-        <button
-          onClick={() => setGroupBy('role')}
-          className="bg-blue-600 text-white border-none rounded-lg px-4 py-2 mx-2 cursor-pointer transition-all hover:bg-blue-500"
-        >
+        <button onClick={() => setGroupBy('role')} className="btn-primary">
           Group by Role
         </button>
       </div>
@@ -126,8 +102,7 @@ function IndexPopup() {
                 <div
                   key={generateId(persona)}
                   onClick={() => handleItemClick(persona.userName)}
-                  className={`cursor-pointer border-2 border-blue-600 rounded-lg p-3 mb-2 transition-all ${selectedUser === persona.userName ? 'bg-gray-200' : 'bg-transparent'
-                    }`}
+                  className={`user-item ${selectedUser === persona.userName ? 'bg-gray-200' : ''}`}
                 >
                   <strong>User Name:</strong> {persona.userName}<br />
                   <strong>First Name:</strong> {persona.firstName}<br />

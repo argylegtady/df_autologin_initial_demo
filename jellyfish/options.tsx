@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-// Optionally, use a library for multi-select (e.g., 'react-select')
+import React, { useState } from 'react';
 import Select from 'react-select';
-import userData from './user.json'; // adjust path as needed
+import userData from './user.json';
 
-// Extract unique verticals
+import "./style.css";
+
 const uniqueVerticals = Array.from(new Set(userData.personas.map((persona) => persona.vertical)));
 
 const Options = () => {
@@ -11,19 +11,17 @@ const Options = () => {
 
   const handleSelectionChange = (selectedOptions) => {
     setSelectedVerticals(selectedOptions);
-    // console.log('Selected verticals:', selectedOptions.map((opt) => opt.value));
     localStorage.setItem('selectedVertical', JSON.stringify(selectedOptions));
   };
 
-  // Format options for react-select or similar library
   const verticalOptions = uniqueVerticals.map((vertical) => ({
     value: vertical,
     label: vertical,
   }));
 
   return (
-    <div style={{ width: '400px', height: '400px' }}>
-      <h1>Select which verticals you'd like to be included in the login list:</h1>
+    <div className="p-4 w-[400px] h-[400px]">
+      <h1 className="text-xl font-bold mb-4">Select which verticals to include in the login list:</h1>
       <Select
         options={verticalOptions}
         isMulti
@@ -36,6 +34,7 @@ const Options = () => {
             height: '100%',
           }),
         }}
+        className="custom-select"
       />
     </div>
   );
